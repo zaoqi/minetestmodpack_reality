@@ -4,7 +4,7 @@ tmp=$(mktemp -d)
 dir=$PWD
 cd $tmp
 for zip in $SRC/nuke2.1.zip $DOWNLOAD/file.php\?id\=6235 $DOWNLOAD/file.php\?id\=8612 ;do
-	mv $zip un.zip
+	mv "$zip" un.zip
 	if 7z x -r -o./ ./un.zip || unzip ./un.zip ;then
 		echo "解压$zip成功"
 	else

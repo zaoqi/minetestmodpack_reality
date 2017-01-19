@@ -13,10 +13,11 @@ cd $packdir
 for pack in $(cat $dir/modpacks.txt) ;do
 	git clone "$pack"&
 done
-cd $dir
+cd $DOWNLOAD
 for file in $(cat $dir/download.txt) ;do
 	wget "$file"&
 done
+cd $dir
 
 wait
 

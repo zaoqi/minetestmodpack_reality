@@ -28,9 +28,10 @@ cd build
 touch modpack.txt
 cp -rvf $moddir/*/ ./ 2>/dev/null
 cp -rvf $packdir/*/*/ ./ 2>/dev/null
-rm -rvf $moddir/ $packdir/ $DOWNLOAD/ $(find -name .git)
+rm -rvf $moddir/ $packdir/ $(find -name .git)
 
 cd $dir/build
 for d in $(ls $dir/d/) ;do
 	bash $dir/d/$d || exit
 done
+rm -rvf $DOWNLOAD/

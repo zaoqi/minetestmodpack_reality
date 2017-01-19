@@ -2,3 +2,4 @@ https://github.com/minetest-mods/lightning.git
 https://github.com/zaoqi/minetestmod_mccmd.git
 https://github.com/minetest-mods/intllib.git
 https://github.com/zaoqi/trail.git
+https://github.com/D00Med/vehicles.git

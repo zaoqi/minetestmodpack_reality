@@ -52,8 +52,8 @@ for zip in $zipMobpacks ;do
 done
 
 cd $dir/build
-for license in $packdir/*/LICENSE* $packdir/*/license* $packdir/*/README* $packdir/*/readme* $packdir/*/*.txt ;do
-	[ "$(basename $license)" != modpack.txt ] && cp $license $(dirname $license)/*/ &
+for license in $packdir/*/LICENSE* $packdir/*/license* $packdir/*/README* $packdir/*/readme* ;do
+	cp $license $(dirname $license)/*/ &
 done
 
 wait

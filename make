@@ -15,7 +15,11 @@ unZip() {
 	7z x -r -o./ "$1" || unzip "$1" || return 1
 }
 
-rm -rfv build/ &
+{
+	rm -rfv build/
+	mkdir $dir/build
+	touch $dir/build/modpack.txt
+}&
 cd $moddir
 for mod in $(cat $dir/mods.txt) ;do
 	git clone "$mod" || error &
@@ -31,8 +35,6 @@ done
 cd $dir
 
 wait
-mkdir $dir/build
-touch $dir/build/modpack.txt
 
 cd $moddir
 for zip in $zipMods ;do

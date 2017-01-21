@@ -53,7 +53,7 @@ done
 
 cd $dir/build
 for license in $packdir/*/LICENSE* $packdir/*/license* $packdir/*/README* $packdir/*/readme* $packdir/*/*.txt ;do
-	cp $license $(dirname $license)/*/ &
+	[ "$(basename $license)" != modpack.txt ] && cp $license $(dirname $license)/*/ &
 done
 
 wait

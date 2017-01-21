@@ -30,9 +30,13 @@ cd $dir
 mkdir build
 cd build
 touch modpack.txt
-mv -vf $moddir/*/ $packdir/*/*/ ./ 2>/dev/null
-rm -rvf $moddir/ $packdir/ $(find -name .git) &
+bash $dir/unzip.sh || error &
+{
+	mv -vf $moddir/*/ $packdir/*/*/ ./ 2>/dev/null
+	rm -rvf $moddir/ $packdir/ $(find -name .git)
+} &
 
+wait
 cd $dir/build
 for d in $(ls $dir/d/) ;do
 	bash $dir/d/$d || error &

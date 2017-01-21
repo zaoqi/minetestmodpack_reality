@@ -9,7 +9,7 @@ packdir=$(mktemp -d)
 DOWNLOAD=$(mktemp -d)
 dir=$PWD
 SRC=$PWD/src
-zipMods="$SRC/nuke2.1.zip $DOWNLOAD/file.php\?id\=6235 $DOWNLOAD/file.php\?id\=8612 $DOWNLOAD/file.php\?id\=87"
+zipMods="$SRC/nuke2.1.zip $DOWNLOAD/file.php?id=6235 $DOWNLOAD/file.php?id=8612 $DOWNLOAD/file.php?id=87"
 zipMobpacks="$DOWNLOAD/advtrains.zip"
 unZip() {
 	7z x -r -o./ "$1" || unzip "$1" || return 1

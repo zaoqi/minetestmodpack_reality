@@ -1,4 +1,4 @@
 https://github.com/orwell96/advtrains/raw/master/advtrains.zip
-https://forum.minetest.net/download/file.php?id=6235
-https://forum.minetest.net/download/file.php?id=8612
-https://forum.minetest.net/download/file.php?id=87
+https://forum.minetest.net/download/file.php?id=6235 #https://forum.minetest.net/viewtopic.php?t=14597 #[Mod] black holes V2.1 [blackholes]
+https://forum.minetest.net/download/file.php?id=87 #https://forum.minetest.net/viewtopic.php?t=7567 #[Mod] Army Stuff!!! [0.2] [army]
+https://forum.minetest.net/download/file.php?id=8685 #https://forum.minetest.net/viewtopic.php?t=16083 #[Mod] Alive AI V2 [aliveai]

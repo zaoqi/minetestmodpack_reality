@@ -9,7 +9,10 @@ packdir=$(mktemp -d)
 DOWNLOAD=$(mktemp -d)
 dir=$PWD
 SRC=$PWD/src
-zipMods="$SRC/nuke2.1.zip $(echo $(cat $dir/download.txt|awk '{print $1}'))"
+zipMods="$SRC/nuke2.1.zip"
+for f in $(echo $(cat $dir/download.txt|awk '{system("basename "$1)}')) ;do
+	zipMods="$zipMods $DOWNLOAD/$f"
+done
 zipMobpacks="$DOWNLOAD/advtrains.zip"
 unZip() {
 	7z x -r -o./ "$1" || unzip "$1" || return 1

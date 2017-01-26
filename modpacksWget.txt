@@ -1,1 +1,1 @@
-https://github.com/orwell96/advtrains/raw/master/advtrains.zip
+https://github.com/orwell96/advtrains/blob/master/advtrains.zip?raw=true

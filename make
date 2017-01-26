@@ -6,7 +6,7 @@ packdir=$(mktemp -d)
 download=$(mktemp -d)
 dir=$PWD
 readList() {
-	cat "$*" | awk '{print $0}'
+	cat "$*" | awk '{print $1}'
 }
 insrc() {
 	for f in $@ ;do

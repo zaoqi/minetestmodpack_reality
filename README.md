@@ -1,5 +1,5 @@
-# ZNM
-    ZNM's Not Minecraft  
+# Reality
+    Reality  
 	Copyright (c) 2016 zaoqi  
     
     This program is free software: you can redistribute it and/or modify

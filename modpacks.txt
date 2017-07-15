@@ -5,3 +5,4 @@ https://github.com/BlockMen/hud_hunger.git
 https://github.com/zaoqi/minetestmodpack_craftingpack.git
 https://github.com/pyrollo/display_modpack.git
 https://github.com/minetest-mods/homedecor_modpack.git
+https://github.com/zaoqi/minetestmod_aliveai.git
